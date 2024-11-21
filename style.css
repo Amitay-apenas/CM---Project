@@ -265,7 +265,7 @@ hr {
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (max-width: 768px) {
 
     .cards{
         flex-direction: column;
