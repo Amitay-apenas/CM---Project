@@ -20,7 +20,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }   
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
 
 ul{
     list-style: none;
@@ -120,12 +126,13 @@ a{
 
 h2{
     font-family: 'libre bodoni';
+    font-size: 45px;
 }
 
 p {
     margin: 4px;
     font-family: 'geist mono';
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .section01{
@@ -164,7 +171,7 @@ main{
 }
 
 .dynamic_image{
-    max-width: 800px
+    max-width: 55vw;
 }
 
 body{
@@ -271,10 +278,6 @@ hr {
         flex-direction: column;
     }
 
-    h1{
-        font-size: 19px;
-    }
-    
     h2{
         font-size: 30px;
     }
