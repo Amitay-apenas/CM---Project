@@ -254,6 +254,7 @@ hr {
     margin: 5px;
     border-radius: 12px;
     border: none;
+    max-width: 50%;
 }
 
 .dark .card_box, .dark .card_box p{
@@ -262,6 +263,9 @@ hr {
 }
 
 .in_section_box{
+    display: flex;
+    flex-flow: row;
+
     background-color: #80ef80;
     padding: 1.2%;
     border-radius: 10px;
@@ -271,11 +275,42 @@ hr {
     background-color:  #173317;
 }
 
+.dym_food{
+    width: 800px;
+}
+
+.button_change_text{
+    transition: all 1s;
+    max-height: 50px;
+    font-size: 50px;
+    border: none;
+    background: none;
+    color: #173317;
+}
+
+.button_change_text:hover{
+    transition: all 1s;
+    cursor: pointer;
+
+    color: rgb(255, 0, 0);
+    text-shadow: 
+    1px 1px 6px red
+    ;
+}
+
+.in_section_box{
+    transition: all 1s;
+}
 
 @media (max-width: 900px), (max-width: 768px) {
 
     .cards{
         flex-direction: column;
+    }
+
+    .card_box{
+        max-width: 100%;
+        max-height: 50%;
     }
 
     h2{
@@ -347,6 +382,14 @@ hr {
 
     .dynamic_image{
         max-width: 100vw;
+    }
+
+    .in_section_box{
+        flex-flow: column;
+    }
+
+    .dym_food{
+        max-width: 100%;
     }
 
   }
