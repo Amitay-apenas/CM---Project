@@ -21,6 +21,3 @@ for(i = 0; i<locations.length; i ++){
     .bindPopup(locations[i][0])
     .addTo(map);
 }
-    
-// var location01 = L.marker([51.48149, -3.180692]).addTo(map);
-// var location02 = L.marker([51.381518, -2.357619]).addTo(map);
